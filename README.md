@@ -61,7 +61,7 @@ To generate a simple path
 
 ```javascript
     angular.module('MyModule', ['fosjsrouting']).
-            controller(function ($scope, $routing) {
+            controller('Ctrl', function ($scope, $routing) {
                 $scope.path = $routing.generate('my_symfony_path_name');
             });
 ```
@@ -70,7 +70,7 @@ To generate a path with parameters
 
 ```javascript
     angular.module('MyModule', ['fosjsrouting']).
-            controller(function ($scope, $routing) {
+            controller('Ctrl', function ($scope, $routing) {
                 $scope.path = $routing.generate('hello_user_path_name', {'%user%': 'David'});
             });
 ```
@@ -79,7 +79,7 @@ To generate an absolute path with parameters
 
 ```javascript
     angular.module('MyModule', ['fosjsrouting']).
-            controller(function ($scope, $routing) {
+            controller('Ctrl', function ($scope, $routing) {
                 $scope.path = $routing.generate('hello_user_path_name', {'%user%': 'David'}, true);
             });
 ```
