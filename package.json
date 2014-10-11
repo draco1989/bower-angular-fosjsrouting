@@ -1,0 +1,21 @@
+{
+  "name": "angular-fosjsrouting",
+  "description": "Provides angular integration with Symonfy2 FriendsOfSymfony JS Routing",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "devDependencies": {
+    "karma-firefox-launcher": "*",
+    "karma-jasmine": "^0.1.5",
+    "karma": "^0.12.24",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "grunt-karma": "^0.9.0"
+  }
+}
