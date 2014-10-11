@@ -14,16 +14,16 @@ Include main script in your html
 Usage
 -----
 
-Import `angular-fosjsrouting` in your angular module.
+Import `fosjsrouting` in your angular module.
 
 ```javascript
-    angular.module('MyModule', ['angular-fosjsrouting']);
+    angular.module('MyModule', ['fosjsrouting']);
 ```
 
 Configure it throught `$routingProvider`
 
 ```javascript
-    angular.module('MyModule', ['angular-fosjsrouting']).
+    angular.module('MyModule', ['fosjsrouting']).
             config(function ($routingProvider) {
                 $routingProvider.setDefaultParams({
                     '%user_id%': 3
@@ -60,7 +60,7 @@ Service
 To generate a simple path
 
 ```javascript
-    angular.module('MyModule', ['angular-fosjsrouting']).
+    angular.module('MyModule', ['fosjsrouting']).
             controller(function ($scope, $routing) {
                 $scope.path = $routing.generate('my_symfony_path_name');
             });
@@ -69,7 +69,7 @@ To generate a simple path
 To generate a path with parameters
 
 ```javascript
-    angular.module('MyModule', ['angular-fosjsrouting']).
+    angular.module('MyModule', ['fosjsrouting']).
             controller(function ($scope, $routing) {
                 $scope.path = $routing.generate('hello_user_path_name', {'%user%': 'David'});
             });
@@ -78,7 +78,7 @@ To generate a path with parameters
 To generate an absolute path with parameters
 
 ```javascript
-    angular.module('MyModule', ['angular-fosjsrouting']).
+    angular.module('MyModule', ['fosjsrouting']).
             controller(function ($scope, $routing) {
                 $scope.path = $routing.generate('hello_user_path_name', {'%user%': 'David'}, true);
             });
