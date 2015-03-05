@@ -1,11 +1,11 @@
 {
   "name": "angular-fosjsrouting",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     "Jorge García <draco19892002@gmail.com>"
   ],
   "description": "Provides angular integration with Symonfy2 FriendsOfSymfony JS Routing",
-  "main": "dist/angular-fosjsrouting.min.js",
+  "main": "angular-fosjsrouting.min.js",
   "repository": "https://github.com/draco1989/bower-angular-fosjsrouting.git",
   "keywords": [
     "angular",
