@@ -13,7 +13,7 @@ angular.module('fosjsrouting', []).
           $log.error('Cannot generate Symfony2 route. Routing component is not defined.');
           return route;
         }
-        return Routing.generate(route, angular.extend(defaultParams, params), absolute);
+        return Routing.generate(route, angular.extend({}, defaultParams, params), absolute);
       };
     }
 
